@@ -1,0 +1,14 @@
+.dark {
+    --background: linear-gradient(to bottom right, rgb(38, 38, 118), pink);
+    --primary-color: rgb(255, 255, 255);
+    --inverted-color: rgb(0, 0, 0);
+
+    --bg-color-primary-button: rgb(8, 70, 157);
+    --bg-color-primary-button-hovered: rgb(10, 97, 219);
+    --bg-color-warn-button: rgb(126, 12, 12);
+    --bg-color-warn-button-hovered: rgb(228, 17, 17);
+    --bg-color-normal-button: rgb(0, 0, 0);
+    --bg-color-normal-button-hovered: rgb(100, 100, 100);
+
+    --attention-color: rgb(255, 255, 255);
+}

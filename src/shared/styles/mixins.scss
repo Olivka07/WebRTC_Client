@@ -1,0 +1,69 @@
+@import './breakpoints.scss';
+
+// Минимальный размер viewport'а - 320px
+// максимальный размер viewport'a - 1666px
+
+$pcSize: 1666;
+$mobileSize: 320;
+
+@mixin adaptive-font($minFontSize: 12, $maxFontSize: 16) {
+    $diff: $maxFontSize - $minFontSize;
+    $widthDiff: $pcSize - $mobileSize;
+    font-size: calc(
+        #{$minFontSize + px} + $diff * (100vw - #{$mobileSize + px}) / $widthDiff
+    );
+}
+
+@mixin mobile320($att: max-width) {
+    @media (#{$att}: $mobile320) {
+        @content;
+    }
+}
+
+@mixin mobile375($att: max-width) {
+    @media (#{$att}: $mobile375) {
+        @content;
+    }
+}
+
+@mixin mobile420($att: max-width) {
+    @media (#{$att}: $mobile420) {
+        @content;
+    }
+}
+
+@mixin mobile576($att: max-width) {
+    @media (#{$att}: $mobile576) {
+        @content;
+    }
+}
+
+@mixin mobile768($att: max-width) {
+    @media (#{$att}: $mobile768) {
+        @content;
+    }
+}
+
+@mixin tablet900($att: max-width) {
+    @media (#{$att}: $tablet900) {
+        @content;
+    }
+}
+
+@mixin tablet1024($att: max-width) {
+    @media (#{$att}: $tablet1024) {
+        @content;
+    }
+}
+
+@mixin hd1280($att: max-width) {
+    @media (#{$att}: $hd1280) {
+        @content;
+    }
+}
+
+@mixin fullhd($att: max-width) {
+    @media (#{$att}: $fullhd) {
+        @content;
+    }
+}

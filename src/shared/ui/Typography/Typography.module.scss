@@ -1,0 +1,55 @@
+@import '../../styles/mixins.scss';
+
+.h1__header {
+    line-height: 1.5;
+    @include adaptive-font(32, 40);
+}
+
+.h2__header {
+    @include adaptive-font(24, 30);
+    line-height: 1.5;
+}
+
+.h3__header {
+    @include adaptive-font(16, 24);
+    line-height: 1.2;
+}
+
+.h4__header {
+    @include adaptive-font(16, 24);
+    line-height: 1.2;
+}
+
+.text {
+    @include adaptive-font(14, 20);
+}
+
+.red {
+    color: red;
+}
+
+.black {
+    color: black;
+}
+
+.Consolas {
+    font-family: Consolas, Courier;
+}
+
+.right {
+    text-align: right;
+}
+
+.center {
+    text-align: center;
+}
+
+.left {
+    text-align: left;
+}
+
+@each $i in (200, 300, 400, 500, 600, 700, 800, 900) {
+    .weight-#{$i} {
+        font-weight: #{$i};
+    }
+}
